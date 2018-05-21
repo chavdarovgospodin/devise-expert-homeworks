@@ -11,29 +11,30 @@ let Product = (function () {
     }
 
     function show() {
-        console.log(`${product} ${cateogry}`);
+        console.log(`${product} ${category}`);
     }
+
     //public
-    return function(product,category) {
-        items(pname,cname);
+    return function (pname, cname) {
+        items(pname, cname);
         this.print = show;
         this.setNames = items;
-        this.isRegistered = function(){
-            if (product !== undefined && category !== undefined){
+        this.isRegistered = function () {
+            if (product !== undefined && category !== undefined) {
                 return true;
             }
             return false;
         }
-        
+
     };
 })();
 
 
-let a = new Product ("Samsung", "Phone");
+let a = new Product("Samsung", "Phone");
 a.print();
 
 a.setNames('Lenovo', 'Laptop');
 
-if (a.isRegistered() ){
+if (a.isRegistered()) {
     a.print();
 }

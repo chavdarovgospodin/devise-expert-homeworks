@@ -11,7 +11,7 @@ let Product = (function () {
     }
 
     function show() {
-        console.log(`${product} ${cateogry}`);
+        console.log(`${product} ${category}`);
     }
     //public
     return {
