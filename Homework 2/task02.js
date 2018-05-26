@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var task02_queue_1 = require("./task02_queue");
+var queue = new task02_queue_1.Queue();
+queue.put('Petur');
+queue.put('Georgi');
+queue.put('Georgi');
+queue.put('Mihail');
+queue.put('Chavdar');
+queue.get();
+queue.remove('Georgi');
+console.log(queue);
